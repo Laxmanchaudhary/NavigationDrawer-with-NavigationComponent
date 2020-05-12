@@ -8,16 +8,30 @@
     <fragment
         android:id="@id/menu_1"
         android:name="com.example.navigationdrawerwithnavigationcomponent.Fragment_1"
-        android:label="fragment_1"
-        tools:layout="@layout/fragment_1" />
+        android:label="Home"
+        tools:layout="@layout/fragment_1">
+        <action
+            android:id="@+id/action_menu_1_to_menu_2"
+            app:destination="@id/menu_2" />
+    </fragment>
     <fragment
         android:id="@id/menu_2"
         android:name="com.example.navigationdrawerwithnavigationcomponent.Fragment_2"
-        android:label="fragment_2"
-        tools:layout="@layout/fragment_2" />
+        android:label="Login"
+        tools:layout="@layout/fragment_2">
+        <action
+            android:id="@+id/action_menu_2_to_menu_3"
+            app:destination="@id/menu_3" />
+    </fragment>
     <fragment
         android:id="@id/menu_3"
         android:name="com.example.navigationdrawerwithnavigationcomponent.Fragment_3"
-        android:label="fragment_3"
-        tools:layout="@layout/fragment_3" />
+        android:label="Done"
+        tools:layout="@layout/fragment_3">
+        <action
+            android:id="@+id/action_menu_3_to_menu_1"
+            app:destination="@id/menu_1"
+            app:popUpTo="@id/menu_1"
+            app:popUpToInclusive="true" />
+    </fragment>
 </navigation>

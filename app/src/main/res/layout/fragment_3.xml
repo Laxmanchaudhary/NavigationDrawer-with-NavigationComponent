@@ -1,16 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:layout_margin="20dp"
     android:layout_height="match_parent"
-    tools:context=".Fragment_3">
+    tools:context=".Fragment_1">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+
+    <Button
         android:layout_width="match_parent"
-        android:gravity="center_vertical|center_horizontal"
+        android:id="@+id/done"
+        android:text="Done"
+        android:background="#FFC107"
+        android:textColor="@android:color/primary_text_light_nodisable"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
         android:textAppearance="@style/TextAppearance.AppCompat.Headline"
-        android:layout_height="match_parent"
-        android:text="Fragment_3" />
+        android:layout_height="wrap_content">
 
-</FrameLayout>
+    </Button>
+</LinearLayout>
