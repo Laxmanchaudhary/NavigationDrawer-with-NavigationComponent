@@ -24,7 +24,9 @@ class Fragment_2 : Fragment() {
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
         gologin.setOnClickListener {
-            findNavController().navigate(R.id.action_menu_2_to_menu_3)
+            var name="Hello "+edt_username.text.toString()+" your password is: " +edt_password.text.toString()
+            var dir=Fragment_2Directions.actionMenu2ToMenu3(name)
+            findNavController().navigate(dir)
 
         }
     }

@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
+import androidx.navigation.fragment.navArgs
 import kotlinx.android.synthetic.main.fragment_3.*
 
 /**
@@ -25,9 +26,15 @@ class Fragment_3 : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        var data=arguments
+       text_data.text=data?.get("name").toString()
         done.setOnClickListener {
             findNavController().navigate(R.id.action_menu_3_to_menu_1)
         }
     }
 
 }
+
+
+
+

@@ -10,8 +10,7 @@
     <Button
         android:layout_width="match_parent"
         android:id="@+id/login"
-
-        android:text="Login"
+        android:text="Login ->"
         android:background="#FFC107"
         android:textColor="@android:color/primary_text_light_nodisable"
         android:textAppearance="@style/TextAppearance.AppCompat.Headline"

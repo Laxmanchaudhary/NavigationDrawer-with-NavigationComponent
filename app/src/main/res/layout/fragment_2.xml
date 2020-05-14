@@ -10,9 +10,21 @@
    <EditText
        android:layout_width="match_parent"
        android:hint="Username"
+       android:paddingRight="10dp"
+       android:layout_margin="10dp"
+       android:drawableLeft="@drawable/username"
+       android:id="@+id/edt_username"
+       android:paddingLeft="5dp"
+
        android:layout_height="wrap_content"/>
     <EditText
+        android:paddingRight="10dp"
+        android:inputType="numberPassword"
+        android:layout_margin="10dp"
+        android:paddingLeft="5dp"
         android:layout_width="match_parent"
+        android:id="@+id/edt_password"
+        android:drawableLeft="@drawable/password"
         android:hint="Password"
         android:layout_height="wrap_content">
    </EditText>
